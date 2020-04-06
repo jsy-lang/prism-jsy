@@ -1,0 +1,23 @@
+{
+  "name": "prism-jsy",
+  "version": "0.0.1",
+  "description": "Prism syntax for JSY. (See https://jsy-lang.github.io)",
+  "author": "Shane Holloway <shane.holloway@ieee.org>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsy-lang/prism-jsy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jsy-lang/prism-jsy/issues"
+  },
+  "homepage": "https://github.com/jsy-lang/prism-jsy#readme",
+  "main": "prism-jsy.js",
+  "module": "prism-jsy.js",
+  "browser": "prism-jsy.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prismjs": "^1.20.0"
+  },
+  "scripts": {}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Example JSY Script</title>
+
+  <link rel='icon' href='data:image/png;base64,' />
+</head>
+
+<body>
+  <jsy-script>
+    if true != false ::
+      console.log @
+        'This log comes from FIRST textContent'
+        @{} ts: new Date
+            meta: import.meta
+  </jsy-script>
+  <jsy-script>
+    if true != false ::
+      console.log @
+        'This log comes from SECOND textContent'
+        @{} ts: new Date
+            meta: import.meta
+  </jsy-script>
+</body>
+</html>
+

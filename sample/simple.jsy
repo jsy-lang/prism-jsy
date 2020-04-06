@@ -1,0 +1,7 @@
+
+if true != false ::
+  console.log @
+    'A log message'
+    @{} ts: new Date
+        meta: import.meta
+

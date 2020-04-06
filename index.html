@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>JSY Prism Syntax</title>
+
+  <link rel='icon' href='data:image/png;base64,' />
+  <style>
+    body {
+      max-width: 60em;
+      margin: 2em auto;
+    }
+  </style>
+
+  <link href='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css' rel='stylesheet' />
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-core.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-clike.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-markup.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-markup-templating.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-javascript.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/file-highlight/prism-file-highlight.min.js'></script>
+
+  <script src='./prism-jsy.js'></script>
+</head>
+
+<body>
+  <h1>JSY highlighting with <a href='https://prismjs.com/'>Prism</a></h1>
+  <ul style='font-size: 16pt'>
+    <li>Simple <a href='./sample/simple.html'>JSY highlighting</a></li>
+    <li><a href='./sample/with_codejar.html'>JSY editor</a> with <a href='https://medv.io/codejar/'>CodeJar</a> and <a href='https://prismjs.com/'>Prism</a> together</li>
+  </ul>
+
+  <h2>JSY source</h2>
+  <pre data-src='./sample/simple.jsy'></pre>
+
+  <h2>jsy-script in html</h2>
+  <pre data-src='./sample/jsy_script.html'></pre>
+</body>
+</html>
