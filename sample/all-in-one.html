@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>JSY Prism Syntax</title>
+
+  <link rel='icon' href='data:image/png;base64,' />
+  <style>
+    body {
+      max-width: 60em;
+      margin: 2em auto;
+    }
+  </style>
+
+  <link href='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css' rel='stylesheet' />
+  <script src='../umd/prism-jsy.js'></script>
+</head>
+
+<body>
+  <pre>
+    <code id='jsy_src' class='language-jsy'>
+      if true != false ::
+        console.log @
+          'A log message'
+          @{} ts: new Date
+              meta: import.meta
+    </code>
+  </pre>
+</body>
+</html>

@@ -1,4 +1,4 @@
-{
+export default function(Prism) {
   const plang = Prism.languages
   if (! plang.javascript)
     throw new Error('Prism jsy depends upon javascript definition')

@@ -1,6 +1,6 @@
 {
   "name": "prism-jsy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prism syntax for JSY. (See https://jsy-lang.github.io)",
   "author": "Shane Holloway <shane.holloway@ieee.org>",
   "license": "BSD-2-Clause",
@@ -12,12 +12,21 @@
     "url": "https://github.com/jsy-lang/prism-jsy/issues"
   },
   "homepage": "https://github.com/jsy-lang/prism-jsy#readme",
-  "main": "prism-jsy.js",
-  "module": "prism-jsy.js",
-  "browser": "prism-jsy.js",
+  "main": "umd/prism-jsy.js",
+  "module": "esm/prism-jsy.mjs",
+  "browser": "umd/prism-jsy.js",
   "dependencies": {},
   "devDependencies": {
-    "prismjs": "^1.20.0"
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "prismjs": "^1.20.0",
+    "rollup": "^2.3.3"
   },
-  "scripts": {}
+  "scripts": {
+    "clean": "rm -rf cjs/ umd/ esm/ iife/",
+    "build": "rollup --config",
+    "watch": "npm -s run build -- --watch",
+    "pretest": "npm -s run build",
+    "test": "true"
+  }
 }
