@@ -1,6 +1,6 @@
 {
   "name": "prism-jsy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Prism syntax for JSY. (See https://jsy-lang.github.io)",
   "author": "Shane Holloway <shane.holloway@ieee.org>",
   "license": "BSD-2-Clause",
@@ -15,6 +15,12 @@
   "main": "umd/prism-jsy.js",
   "module": "esm/prism-jsy.mjs",
   "browser": "umd/prism-jsy.js",
+  "files": [
+    "esm",
+    "umd",
+    "iife",
+    "src"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
