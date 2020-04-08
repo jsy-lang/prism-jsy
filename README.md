@@ -21,7 +21,13 @@ Please see [JSY language docs](https://github.com/jsy-lang/jsy-lang-docs) for de
 	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-clike.js'></script>
 	<script src='https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-javascript.js'></script>
 
-	<script src='https://cdn.jsdelivr.net/npm/prism-jsy/prism-jsy.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/prism-jsy/esm/prism-jsy-cdn.mjs'></script>
+
+  <!-- or -->
+	<script src='https://cdn.jsdelivr.net/npm/prism-jsy/iife/prism-jsy-syntax.js'></script>
+
+  <!-- or -->
+	<script src='https://cdn.jsdelivr.net/npm/prism-jsy/umd/prism-jsy.js'></script>
 
   ...
 </head>
