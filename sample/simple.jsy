@@ -1,4 +1,9 @@
 
+#IF simple
+  # INNER simple
+  # BLAH
+#ELSE
+
 if true != false ::
   console.log @
     'A log message'

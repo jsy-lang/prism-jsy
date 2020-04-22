@@ -4,14 +4,6 @@ export default function(Prism) {
     throw new Error('Prism jsy depends upon javascript definition')
 
   const jsy = plang.jsy = {
-    'jsy-block': {
-      greedy: true, alias: 'operator',
-      pattern: /::[^\w\s]*/ },
-
-    'jsy-at': {
-      greedy: true, alias: 'operator',
-      pattern: /(?:@|\?@)[^\w\s]*/ },
-
     'jsy-function': {
       greedy: true, alias: 'function',
       pattern: /(?:@=>|@::|@\\)[^\w\s]*/ },
@@ -23,6 +15,26 @@ export default function(Prism) {
     'jsy-fold': {
       greedy: true, alias: 'operator',
       pattern: /;([-+*\/%^<>&|!?=,.:]+)/ },
+
+    'jsy-block': {
+      greedy: true, alias: 'operator',
+      pattern: /::[^\w\s]*/ },
+
+    'jsy-at': {
+      greedy: true, alias: 'operator',
+      pattern: /(?:@|\?@)[^\w\s]*/ },
+
+    'jsy-preprocessor': {
+      greedy: true, alias: 'macro property',
+      pattern: /^\s*#\s*\w+.*$/m,
+      inside: {
+        'keyword': {
+          pattern: /(^\s*#\s*)\w+/m,
+          lookbehind: true,
+          greedy: true,
+        }
+      }
+    },
 
     ... plang.extend('javascript')
   }
