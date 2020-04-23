@@ -45,3 +45,8 @@ Please see [JSY language docs](https://github.com/jsy-lang/jsy-lang-docs) for de
 </body>
 </html>
 ```
+
+## License
+
+[BSD-2-Clause](LICENSE)
+
